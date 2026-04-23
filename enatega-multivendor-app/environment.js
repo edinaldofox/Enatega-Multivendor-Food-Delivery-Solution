@@ -94,4 +94,7 @@ const getEnvVars = (env = Updates.releaseChannel) => {
   }
 }
 
+// Used by bootstrap code to toggle production-only behavior such as Sentry debug logs.
+export const isProduction = Updates.releaseChannel === 'production'
+
 export default getEnvVars
